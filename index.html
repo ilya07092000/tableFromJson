@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="review">
+        <p>This app was created with native JavaScript.
+        So, I used FETCH method to get data from my database. Database was created by me via JSONPlaceholder. <a href="http://my-json-server.typicode.com/ilya07092000/demo/users"> Link on My DB</a></br>
+        In the top right corner you can see DB indicator. If DB will be incative, this app will use local data, which stored in my script.js file and you will see "DB is inactive" with red background. <br> 
+      You can search users in this tabel by input field, also you can sort users by birthday date clicking on the arrows. 
+       It is not responsive layout because it is not purpose of this app.</br></p>
+      </div>
+      <header>
+        <input type="text" name="" id="text" placeholder="search" />
+        <div class="db__check">
+          <div class="db__container"></div>
+        </div>
+      </header>
+
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Phone number</th>
+          <th>Email</th>
+          <th class="birthday__col">
+            Birthday<img
+              class="up__arrow"
+              src="multimedia-option.svg"
+              alt=""
+            /><img class="down__arrow" src="multimedia-option.svg" alt="" />
+          </th>
+          <th>Company</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
