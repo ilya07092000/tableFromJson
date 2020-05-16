@@ -1,24 +1,22 @@
-/* Main styles============== */
-
 html {
-    font-size: 15px;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-  }
+  font-size: 15px;
+}
 
-  
-  *,
-  ::after,
-  ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 .container {
   max-width: 970px;
@@ -28,38 +26,45 @@ html {
 }
 header {
   padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #text {
   font-size: 20px;
   padding: 2px 5px;
 }
 table {
-font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-font-size: 14px;
-border-collapse: collapse;
-text-align: center;
-margin: 0 auto;
-position: relative;
-width: 100%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
 }
 th {
-background: #AFCDE7;
-color: white;
-padding: 20px 30px;
+  background: #afcde7;
+  color: white;
+  padding: 20px 30px;
 }
-th, td {
-border-style: solid;
-border-width: 0 1px 1px 0;
-border-color: white;
+th,
+td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
 }
 td {
-background: #D8E6F3;
+  background: #d8e6f3;
 }
 th:first-child {
-text-align: left;
+  text-align: left;
 }
 .birthday__col {
   position: relative;
@@ -72,7 +77,9 @@ text-align: left;
 }
 
 .down__arrow {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
   bottom: 7px;
 }
 
